@@ -7,7 +7,7 @@ import { addMsg } from "./reduxStore";
 
 const App = () => {
 
-  const client = new W3CWebSocket('ws://localhost:3000');
+  const client = new W3CWebSocket('ws://localhost:3000/livestream');
 
   const dispatch = useDispatch();
   const messages = useSelector((state) => state.data.messages);
